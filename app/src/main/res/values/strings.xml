@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Place Order App</string>
+    <string name="head">FOOD PLACE</string>
+    <string name="login">LOGIN</string>
+    <string name="reg">REGISTER</string>
+    <string name="user">User Name</string>
+    <string name="pass">Password</string>
+    <string name="email">Email ID</string>
+    <string name="add">ADD</string>
+    <string name="menu">MENU</string>
+    <string name="prev">Previous Order</string>
+    <string name="order">Click Here To Place Order</string>
+    <string name="back">BACK</string>
+    <string name="confirmText">Confirm your Order</string>
+    <string name="bMenu">Back To Home</string>
+    <string name="confirm">Confirm</string>
+    <string name="logout">Log Out</string>
+
+    <string name="one">Pepperoni</string>
+    <string name="two">Bacon</string>
+    <string name="three">Green Pepper</string>
+    <string name="four">Mushroom</string>
+    <string name="five">Pineapple</string>
+    <string name="six">Onion</string>
+    <string name="seven">Tomato</string>
+    <string name="eight">Hot Peppers</string>
+    <string name="topping">Select Toppings</string>
+    <string name="size">Select Size</string>
+
+    <string name="spicy">Spicy</string>
+    <string name="sauce">Sauces</string>
+    <string name="hot">Hot</string>
+    <string name="medium">Medium</string>
+    <string name="mild">Mild</string>
+
+    <string name="s1">Bolognese</string>
+    <string name="s2">Alfredo</string>
+    <string name="s3">Carbonara</string>
+    <string name="s4">Honey Garlic</string>
+    <string name="s5">BBQ</string>
+
+    <string name="soda">Choose Soda Pop</string>
+
+    <string-array name="array">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Extra Large</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimage"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context=".DetailsActivity">
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="gfhfhf"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/foodImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/foodDesc"
+        android:layout_width="380dp"
+        android:layout_height="192dp"
+        android:layout_marginBottom="16dp"
+        android:text="cfdfdghdd"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/placeOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodImage" />
+
+    <Button
+        android:id="@+id/placeOrder"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/custom"
+        android:text="@string/order"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodDesc" />
+
+    <ImageView
+        android:id="@+id/foodImage"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/foodDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodName"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="VectorDrawableCompat" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="380dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorAccent"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeOrder" />
+</android.support.constraint.ConstraintLayout>

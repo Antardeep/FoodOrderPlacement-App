@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimage"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context=".ToppingActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/topping"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/size"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/toppingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/toppingButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom"
+        android:text="@string/add"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="380dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <CheckBox
+            android:id="@+id/pepper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/one"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/bacon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/two"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/three"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/mushroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/four"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/pineapple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/five"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/onion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/six"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/tomato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seven"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eight"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

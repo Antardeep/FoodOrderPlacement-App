@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SizeActivity"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:background="@drawable/backimage">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="380dp"
+        android:layout_height="151dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hot"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/medium"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mild"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/spicy"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sauce"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="380dp"
+        android:layout_height="161dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/sauceButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <CheckBox
+            android:id="@+id/bolognese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s1"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/alfredo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s2"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/carbonara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s3"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/honey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s4"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/bbq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s5"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sauceButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom"
+        android:text="@string/add"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+</android.support.constraint.ConstraintLayout>

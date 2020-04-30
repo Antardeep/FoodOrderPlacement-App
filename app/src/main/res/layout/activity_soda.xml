@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SodaActivity"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:background="@drawable/backimage">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <TableRow android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/coke"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#111111"
+                android:scaleType="fitXY"
+                android:src="@drawable/coke" />
+
+            <ImageButton
+                android:id="@+id/diet"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#111111"
+                android:scaleType="fitXY"
+                android:src="@drawable/diet" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/ginger"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#111111"
+                android:scaleType="fitXY"
+                android:src="@drawable/ginger" />
+
+            <ImageButton
+                android:id="@+id/sprite"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#111111"
+                android:scaleType="fitXY"
+                android:src="@drawable/sprite" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/orange"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#111111"
+                android:scaleType="fitXY"
+                android:src="@drawable/orange" />
+
+            <ImageButton
+                android:id="@+id/pepsi"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#111111"
+                android:scaleType="fitXY"
+                android:src="@drawable/pepsi" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/soda"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

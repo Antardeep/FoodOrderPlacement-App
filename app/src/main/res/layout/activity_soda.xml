@@ -22,16 +22,20 @@
             <ImageButton
                 android:id="@+id/coke"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:adjustViewBounds="true"
                 android:background="#111111"
+                android:contentDescription="@string/bMenu"
                 android:scaleType="fitXY"
                 android:src="@drawable/coke" />
 
             <ImageButton
                 android:id="@+id/diet"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:adjustViewBounds="true"
                 android:background="#111111"
+                android:contentDescription="@string/soda"
                 android:scaleType="fitXY"
                 android:src="@drawable/diet" />
         </TableRow>
@@ -41,16 +45,20 @@
             <ImageButton
                 android:id="@+id/ginger"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:adjustViewBounds="true"
                 android:background="#111111"
+                android:contentDescription="@string/soda"
                 android:scaleType="fitXY"
                 android:src="@drawable/ginger" />
 
             <ImageButton
                 android:id="@+id/sprite"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:adjustViewBounds="true"
                 android:background="#111111"
+                android:contentDescription="@string/soda"
                 android:scaleType="fitXY"
                 android:src="@drawable/sprite" />
         </TableRow>
@@ -60,16 +68,20 @@
             <ImageButton
                 android:id="@+id/orange"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:adjustViewBounds="true"
                 android:background="#111111"
+                android:contentDescription="@string/soda"
                 android:scaleType="fitXY"
                 android:src="@drawable/orange" />
 
             <ImageButton
                 android:id="@+id/pepsi"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:adjustViewBounds="true"
                 android:background="#111111"
+                android:contentDescription="@string/soda"
                 android:scaleType="fitXY"
                 android:src="@drawable/pepsi" />
         </TableRow>
@@ -77,13 +89,13 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
         android:text="@string/soda"
-        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"

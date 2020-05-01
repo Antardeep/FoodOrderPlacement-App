@@ -10,14 +10,14 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
         android:text="@string/confirmText"
-        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/confrimDetailText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,12 +26,12 @@
 
     <TextView
         android:id="@+id/confrimDetailText"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="24dp"
         android:textColor="@color/colorAccent"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/confirmButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,12 +41,12 @@
     <Button
         android:id="@+id/confirmButton"
         android:layout_width="380dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/custom"
         android:text="@string/confirm"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bMenu"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,8 +55,8 @@
 
     <Button
         android:id="@+id/bMenu"
-        android:layout_width="380dp"
-        android:layout_height="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorAccent"

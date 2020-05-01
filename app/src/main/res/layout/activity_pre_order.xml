@@ -7,37 +7,48 @@
     android:theme="@style/Theme.AppCompat.NoActionBar"
     tools:context=".PreOrderActivity">
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="395dp"
-        android:layout_height="568dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/backToHome"
+        android:layout_marginBottom="16dp"
+        android:background="#48a47345"
+        app:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:text="@string/prev"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="382dp"
+        android:layout_height="568dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/backToHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"></ListView>
+
     <Button
         android:id="@+id/backToHome"
-        android:layout_width="380dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorAccent"
         android:text="@string/bMenu"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listView" />
+        app:layout_constraintHorizontal_bias="0.466" />
 </android.support.constraint.ConstraintLayout>

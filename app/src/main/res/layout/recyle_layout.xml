@@ -6,46 +6,45 @@
     <LinearLayout
         android:id="@+id/rLayout"
         android:padding="10dp"
-        android:layout_width="380dp"
-        android:layout_height="128dp"
-        android:layout_margin="10dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/card">
 
         <ImageView
             android:id="@+id/item_image"
             android:layout_width="128dp"
             android:layout_height="128dp"
+            android:contentDescription="@string/menu"
             android:scaleType="centerCrop"
             android:src="@drawable/pizza" />
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/item_name"
-                android:layout_width="240dp"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="Pizza"
-                android:textAlignment="center"
-                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/item_desc"
-                android:layout_width="240dp"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="8 Toppings 4 sizes"
-                android:textAlignment="center"
+                android:gravity="center_horizontal"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/item_price"
-                android:layout_width="240dp"
+                android:layout_width="260dp"
                 android:layout_height="30dp"
                 android:background="@drawable/background"
-                android:text="$9.99"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
